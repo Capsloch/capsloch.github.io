@@ -1,7 +1,5 @@
 *
-140 char summary
-another font?
-remove male
+
 add random, fabricated? facts
 add "click here finger anim"
 add start page, making this my traditional website 
@@ -10,9 +8,10 @@ add start page, making this my traditional website
 *
 - portrait picture
 
-- stat icons
+
 - pixel explode effect
 - sfx 
+- go through icons and adjust contrast directly on sprites
 
 - load screen
 - format case texts, ie. use uppercase for example
@@ -21,9 +20,10 @@ add start page, making this my traditional website
 	
 - test on all platforms
 
-- element z depth tween for singling out elements
+
 
 - bg partcile starry sky?
+
 
 ? - possible rpg chat
 
@@ -33,8 +33,11 @@ add start page, making this my traditional website
 
 ? add support for openeing a few screenshots
 
-
-
-
+x - element z depth tween for singling out elements
+x - add retro cursor style on hover
+x - stat icons
+x add next button on ach+exp pages
+x 140 char summary
+x remove male
 x - more achievements
 x - complete case descriptions
