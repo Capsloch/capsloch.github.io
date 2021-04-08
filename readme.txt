@@ -1,124 +1,140 @@
-To do 
+TO DO
 
-! - details on individual skill or trophy pickup
+?- only jump if releasing above character?
 
+- add siab room/project
 
-- Implement resistance to give more challenge than just 1 - 2 - 3 (waiting for cooldowns to go)
-- can pickup health to replenish?
-- shouts from me (action cries, like "Behaviorism is for pussies" or "I like puzzle games" or "Cross multiplayer game my ass")
-
-
-? - introduce heated hits; chargeups and release to give extra power.
-
-- change so picking up duplicate skill loot will just give more points to this skill. So you can have 3 points in GD1 for example
-
-
-x - Push information out when hitting enemy
-x Hookup sheet with battle
-
-
----------------------
-How to Battle CV
-**
-
-
-Enemies are spawned in order from the enemy array. Each x is a new enemy and its properties in y. When enemy is spawned, pop item from array.
-If I want randomness in the generation, I can always mix in some in the beginning of the game. 
-
-HUD elements must be anchored correctly to support multiple landscape res. Therefore they must be pinned to sprite which has the anchor. 
-
-TIMELINE BEHAVIOR
-Timeline are secretly divided into X steps, relative to its screen width. X = amount of enemies. There is also some margins left and right. Meaning, if user drags timeline, then when dropping, it will snap to one of its steps. Also when automatically defeating someone, it will tween to next step pos. 
-
-FAST FORWARD
-When user drags the timeline button, time stops and it shows the correct world title underneath. When dropping the button, button snaps to timeline step and all enemies present are killed, then enemy array are processed one enemy at a time with a delta of very high. Loot and skills are automatically assigned/taken. Result is that game state is now as if user played it to this point. 
-
-FAST BACKWARD
-A bit different. Maybe this shouldn't be allowed? 
-All skills, trophies, levels are reset to default/erased. Then Enemy Array are reset to default. Then processes as per FAST FORWARD.
-
-
-
-SKILL COOLDOWN
-Every skill has a cooldown time, where it cannot be used. Therefore a typical sequence is to switch skills all the time and use the skills which are ready.
-
-PLAYER ATTACK
-When using a skill on an enemy by touching it while the skill is selected, it dealts damage to the enemy. Screen shake, hp adjusted, red tint, dam number. Attack damage is equal to skill base * skill level reduced by enemy resistances. So if attacking with PM skill X with base dam 20-30 and if level 3 PM and attacking enemy with 20% PM resistance, then dam is random(20-30)*3*0.8.
-During its hp range, enemy will spawn some info bits.
-
-
-ENEMY ATTACK
-Enemy also attacks with a base dam and a cooldown. Maybe player attacks can reset the cooldown? When attacking, enemy sprite tweens down towards screen bottom while moving forward in z depth. 
-Player hp is adjusted, bar tinted, portrait tinted, maybe screen overall flash red.
-
-ENEMY DEFEAT
-When enemy hp is 0 or below, it explodes and loot boxes falls to the floor using physics. Player can now touch to pick each up. 
-
-PICKING UP LOOT
-Loot is skills (which gives a new skill + adds a new skill level to player), trophies (which is voiced as achievements) and picture roll. These are one-time only viewings of the project solution (multiple pictures). 
-Picking up loot will show loot box opening screen, where player can touch box to open it, revealing its icon and details. It is then added to either skill bar or trophy bar.
-
-PLAYER DEFEAT
-If player hp reaches 0 or below, we die. End screen plays with some sad text. 
+- make sure I show the best pics
 
 
 
 
----------------- char sheet feedback ----------------
+- make sure all enemies have same stroke color
 
-add start page, making this my traditional website 
-	Me As A RPG Character		Boring oldschool CV		Me Simulated
-add random, fabricated? facts
-add "click here finger anim"
-
-** 
-ikke procent mend bare point
-brug flere termer fra rpg sheets
-
-armor class
-hp
+- compatibility in browsers and platforms
 
 
-level x pm, level y gd
-
- 
-ratio 
-21:9
-24:9
-*** 
-
-- portrait picture
 
 
-- pixel explode effect
-- sfx 
-- go through icons and adjust contrast directly on sprites
+IDEAS
 
-- load screen
-- format case texts, ie. use uppercase for example
-	- links to projects
-	- bosses color text hightlight with bbcode
+- signpost: personal projects dev this way
+	- arriving at... 
+	- signs saying all sorts of fun stuff?
+
+- bg fade in?
+- can view project screens in fullscreen?
+- more interesting enemy behaviors?
+- coin pickups 4 fun
+- secret compartements with pictures in rooms
+- let placed storyline chests drop from the sky
+- evolve my armor over time
+- invincible at start, but later not
+
+? - boss style HUD health bar when fighting?
+- epic defeat screen like loot?
+
+DONE
+
+x - add "The End"
+
+x - falling of the edge of the world - restart
+
+x - put in real skills and trophies 
+	x - names 
+	x - and placement in the storyline
 	
-- test on all platforms
+x - pressing menu should prompt for approval
 
-- use mobile gyroscope for parallax effect
+x - bug: when coming from game -> menu -> game, glitter positions wrongly. Also, glitter is not on when starting, even though there is new content
 
-- bg partcile starry sky?
+x - more enemies in one room?
+x - skill and trophy pickup notification on sheet
+x- no chest if lootids are empty on enemy
+x - what if someone just runs past a boss? = USE LADDERS
+x - can jump
+
+x - add little after thought texts after projects to bind the narrative together
+x - something about climbing in the storyline (not a project ladder)
+x - hide menu hud item until needed
+
+x - t junctions with signposts where you can go to different places?
+
+x - fix sheet responsivity, it is not optimal in iPad aspect
+x - when viewing a room, make sure view is centered correctly and 
+x - Enemies in rooms
+x - Arrange year verticals breaks with year labels (the storyline + rooms in sequence)
+x - Arrange project rooms (the last ones + their content)
+
+x - flag = info icon
+x - items are typewritten in, presented oatt
+x - can flag be a toggle instead so it doesnt activate when boss drops it?
+x - ladders cannot work when room is not unlocked (visible)
 
 
-? - possible rpg chat
 
-- add cord to gamepad campaign icon
+--------
+STORY 1.0
+*A long time ago - 8 years to be exact - I sought my fortune in the game development industry
 
-? mix in fantastic items, to introducice humorrrr
+Arriving at Serious Games Interactive I faced my first challenge
 
-? add support for openeing a few screenshots
+//Which turned out to be pretty hard
 
-x - element z depth tween for singling out elements
-x - add retro cursor style on hover
-x - stat icons
-x add next button on ach+exp pages
-x 140 char summary
-x remove male
-x - more achievements
-x - complete case descriptions
+[FIGHT: QFO2]
+In this strategy game players compete with AIs or up to 3 other players in building the most effective oil company in 5 global destinations. Played by more than 200k unique players.
+
+A success and a complex first project, which I learned a lot from. 
+[SKILL: Agile Project]
+
+Shortly after, I was handed the lead on another strategy game
+[FIGHT: AR]
+Players manage their own city, balancing stakeholders and water demands. Water plays an essential role as a resource and ecological denominator. 8 regional versions.
+
+The game had a fairly technical backend and event engine, which I was part of architecting.  
+[CHEST: skill]
+
+Even though the first two projects had been very successful, at times it felt like I had to plunge into unknown territory 
+[obstacels and fall]
+
+
+
+
+
+The learning curve was steep
+[walk up hill]
+
+But exciting challenges kept presenting itself
+
+[FIGHT: CP]
+Puzzle game teaching 8-14 yr olds coding concepts through a treasurehunt thematic. Level editor and multiplayer. Nominated at Spilprisen 2017 (Best Learning game).
+[CHEST: skill]
+[CHEST: trophy - nominated]
+
+
+[FIGHT: METRO]
+
+
+[FIGHT: CAMBRIDGE]
+
+
+At this point I felt able to navigate harder obstacles
+
+[jump over gap]
+[catch vines]
+
+
+
+[FIGHT: LTR]
+
+
+And I was able to take on new roles
+
+[FIGHT: GHD]
+[FIGHT: SIAB]
+
+From here it has been all downhill
+
+[walk downhill]
+
+And I am eager to experience what awaits at the end of the line 
