@@ -1,30 +1,39 @@
-TO DO
+WHEN BUILDING
+- use worker -> NO
+- first layout Start
+- eMain bool SpawnAtStart -> true
 
-?- only jump if releasing above character?
+TO DO
+- align cv with game
+- shorter load times /loader layout needed?
+
+
+
+- skill texts on pages can go doublke line on ipad
+- make sure all enemies have same stroke color
 
 - add siab room/project
 
-- make sure I show the best pics
+- start profiltext y a little higher, i.e. y must be less. So android/wide doesnt look crappy
+
+
+------------
 
 
 
-
-- make sure all enemies have same stroke color
-
-- compatibility in browsers and platforms
 
 
 
 
 IDEAS
-
+?- only jump if releasing above character?
 - signpost: personal projects dev this way
 	- arriving at... 
 	- signs saying all sorts of fun stuff?
 
 - bg fade in?
 - can view project screens in fullscreen?
-- more interesting enemy behaviors?
+x - more interesting enemy behaviors?
 - coin pickups 4 fun
 - secret compartements with pictures in rooms
 - let placed storyline chests drop from the sky
@@ -35,6 +44,24 @@ IDEAS
 - epic defeat screen like loot?
 
 DONE
+
+x - compatibility in browsers and platforms
+x - destroy fireballs outside layout
+x - make sure i learn the right skills at each project
+x - make sure portrait on cells are supported at start page 
+x - open pdf in another tab, it doesnt quite work to download it on ipad
+x - do statemachine on room reveal
+x - can performance be even better? physics is on?
+x Remember pdf cv
+
+x - check collisions on enemies, some are too small
+
+IPAD/ANDROID
+x qfo needs lower y values, check on wiiide scr
+
+x - make sure I show the best pics
+x too many ladders?
+x GHD room needs right line ending. Now it ends in nothing
 
 x - add "The End"
 
@@ -82,7 +109,8 @@ Arriving at Serious Games Interactive I faced my first challenge
 //Which turned out to be pretty hard
 
 [FIGHT: QFO2]
-In this strategy game players compete with AIs or up to 3 other players in building the most effective oil company in 5 global destinations. Played by more than 200k unique players.
+We developed a strategy game, where players compete with AIs or players in building the most effective oil company in 5 global destinations. Played by more than 200k unique users.
+(OLD)In this strategy game players compete with AIs or up to 3 other players in building the most effective oil company in 5 global destinations. Played by more than 200k unique players.
 
 A success and a complex first project, which I learned a lot from. 
 [SKILL: Agile Project]

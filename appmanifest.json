@@ -1,6 +1,6 @@
 {
-	"name": "Mads-CV-as-game",
-	"short_name": "Mads-CV-as-game",
+	"name": "Mads' online CV",
+	"short_name": "Mads' online CV",
 	"description": "",
 	"start_url": "index.html",
 	"display": "fullscreen",
@@ -9,7 +9,7 @@
 	"icons": [
 		{
 			"src": "icons/icon-16.png",
-			"sizes": "16x16",
+			"sizes": "15x15",
 			"type": "image/png"
 		},
 		{
