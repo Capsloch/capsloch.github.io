@@ -4,7 +4,7 @@ WHEN BUILDING
 - eMain bool SpawnAtStart -> true
 
 TO DO
-- align cv with game
+x - align cv with game
 - shorter load times /loader layout needed?
 
 
