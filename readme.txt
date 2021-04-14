@@ -4,8 +4,7 @@ WHEN BUILDING
 - eMain bool SpawnAtStart -> true
 
 TO DO
-x - align cv with game
-- shorter load times /loader layout needed?
+
 
 
 
@@ -33,7 +32,7 @@ IDEAS
 
 - bg fade in?
 - can view project screens in fullscreen?
-x - more interesting enemy behaviors?
+
 - coin pickups 4 fun
 - secret compartements with pictures in rooms
 - let placed storyline chests drop from the sky
@@ -44,7 +43,9 @@ x - more interesting enemy behaviors?
 - epic defeat screen like loot?
 
 DONE
-
+x - more interesting enemy behaviors?
+x - align cv with game
+x - shorter load times /loader layout needed?
 x - compatibility in browsers and platforms
 x - destroy fireballs outside layout
 x - make sure i learn the right skills at each project
